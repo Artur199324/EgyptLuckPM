@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "307620577344",
+    "firebase_url": "https://egypt-luck-d0cfc-default-rtdb.firebaseio.com",
+    "project_id": "egypt-luck-d0cfc",
+    "storage_bucket": "egypt-luck-d0cfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307620577344:android:156298715c48d49c699fa5",
+        "android_client_info": {
+          "package_name": "com.pikpok.hrc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307620577344-d6v6crecijjt6k1660nd3q7o9h73u5dl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACjrn5d3vvydB-S810Q76OJItMyC30sks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307620577344-d6v6crecijjt6k1660nd3q7o9h73u5dl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

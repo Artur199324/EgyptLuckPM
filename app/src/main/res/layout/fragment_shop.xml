@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/fon"
+    tools:context=".ui.ShopFragment">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/my_font"
+        android:gravity="center"
+        android:text="@string/you_in_shop"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_game_exit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_game_exit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/mini_margin"
+        android:layout_marginTop="@dimen/mini_margin"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/my_font"
+        android:text="@string/to_main_nmenu"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/my_font"
+        android:layout_marginTop="@dimen/mini_margin"
+        android:gravity="center"
+        android:text="@string/cost_for_every_background_is_5_points"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cost"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_first_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mini_margin"
+                android:src="@mipmap/first_skin"
+                app:layout_constraintEnd_toStartOf="@+id/iv_second_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/background" />
+
+            <ImageView
+                android:id="@+id/iv_second_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mini_margin"
+                android:src="@mipmap/second_skin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_first_background"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/background"/>
+
+            <ImageView
+                android:id="@+id/iv_third_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mini_margin"
+                android:layout_marginTop="@dimen/mini_margin"
+                android:src="@mipmap/third_skin"
+                app:layout_constraintEnd_toStartOf="@+id/iv_fourth_background"
+                app:layout_constraintStart_toEndOf="@+id/iv_first_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_first_background"
+                android:contentDescription="@string/background"/>
+
+            <ImageView
+                android:id="@+id/iv_fourth_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mini_margin"
+                android:layout_marginEnd="@dimen/mini_margin"
+                android:src="@mipmap/fourth_skin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_third_background"
+                app:layout_constraintTop_toBottomOf="@id/iv_second_background"
+                android:contentDescription="@string/background"/>
+
+
+
+
+            <ImageView
+                android:id="@+id/iv_fifth_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mini_margin"
+                android:layout_marginTop="@dimen/mini_margin"
+                android:src="@mipmap/fifth_skin"
+                app:layout_constraintEnd_toStartOf="@+id/iv_fourth_background"
+                app:layout_constraintStart_toEndOf="@+id/iv_first_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_third_background"
+                android:contentDescription="@string/background"/>
+
+            <ImageView
+                android:id="@+id/iv_sixth_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mini_margin"
+                android:layout_marginEnd="@dimen/mini_margin"
+                android:src="@mipmap/sixth_skin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_third_background"
+                app:layout_constraintTop_toBottomOf="@id/iv_fourth_background"
+                android:contentDescription="@string/background"/>
+
+
+            <ImageView
+                android:id="@+id/iv_seventh_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mini_margin"
+                android:contentDescription="@string/background"
+                android:src="@mipmap/fon"
+                app:layout_constraintStart_toStartOf="@+id/iv_fifth_background"
+                app:layout_constraintTop_toBottomOf="@id/iv_fifth_background" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

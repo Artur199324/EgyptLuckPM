@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Egypt Luck PM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_nback_pharaoh">WELCOME \nback,Pharaoh</string>
+    <string name="character">character</string>
+    <string name="login">Login</string>
+    <string name="login_to_system_nenter_10_characters_or_less">Login to system,\nEnter 10 characters or less</string>
+    <string name="login_string">Login!</string>
+    <string name="welcome_back_nlogin_name">Welcome back,\nlogin name</string>
+    <string name="exit_from_app">APP\nEXIT</string>
+    <string name="to_main_nmenu">To main \nmenu</string>
+    <string name="play">Play!</string>
+    <string name="shop">SHOP</string>
+    <string name="rules">Rules</string>
+    <string name="catch_text">Catch</string>
+    <string name="random_symbol">Random symbol</string>
+    <string name="you_in_shop">You in shop,here you can buy game themes \n10 points,10 games</string>
+    <string name="cost_for_every_background_is_5_points">Cost for every background is 5 points</string>
+    <string name="background">background</string>
+    <string name="random">random</string>
+    <string name="slot">slot</string>
+    <string name="_10_points_10_games">10 points ,10 games</string>
+    <string name="in_this_game_you_should_catch_nright_symbols_in_game_screen_npress_start_button_game_will_generate_random_symbol_nthat_you_should_catch_by_clicking_button_catch">In this game,you should catch \nright symbols,in game screen,\npress start button,game will generate random symbol,\nthat you should catch,by clicking button(catch)</string>
+
+</resources>

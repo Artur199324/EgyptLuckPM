@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fon"
+    tools:context=".ui.GameFragment">
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="@font/my_font"
+        android:gravity="center"
+        android:text="@string/_10_points_10_games"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="@font/my_font"
+        android:gravity="center"
+        android:text="@string/random_symbol"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_info" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_fon"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_random"
+        android:contentDescription="@string/background" />
+
+    <ImageView
+        android:id="@+id/iv_random_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/j"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fon"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fon"
+        app:layout_constraintStart_toStartOf="@+id/iv_fon"
+        app:layout_constraintTop_toTopOf="@+id/iv_fon"
+        android:contentDescription="@string/random" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_app_exit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="@dimen/mini_margin"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:background="@drawable/roundedbutton"
+
+        android:fontFamily="@font/my_font"
+        android:text="@string/exit_from_app"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_game_exit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/mini_margin"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/my_font"
+        android:text="@string/to_main_nmenu"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_play"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/my_font"
+        android:layout_marginHorizontal="@dimen/mini_margin"
+        android:text="@string/play"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_app_exit"
+        app:layout_constraintStart_toEndOf="@+id/btn_game_exit" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_catch"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="@dimen/mini_margin"
+        android:layout_marginVertical="@dimen/mini_margin"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/my_font"
+        android:text="@string/catch_text"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_play"
+        app:layout_constraintEnd_toStartOf="@+id/btn_app_exit"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/btn_game_exit" />
+
+    <ImageView
+        android:id="@+id/iv_slot_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:src="@mipmap/a"
+        app:layout_constraintBottom_toTopOf="@+id/btn_game_exit"
+        app:layout_constraintEnd_toStartOf="@+id/btn_catch"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/slot" />
+
+    <ImageView
+        android:id="@+id/iv_slot_j"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:src="@mipmap/j"
+        app:layout_constraintBottom_toTopOf="@+id/iv_slot_a"
+        app:layout_constraintEnd_toStartOf="@+id/btn_catch"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/slot"/>
+
+    <ImageView
+        android:id="@+id/iv_slot_k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:src="@mipmap/k"
+        app:layout_constraintBottom_toTopOf="@+id/btn_app_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_catch"
+        android:contentDescription="@string/slot"/>
+
+    <ImageView
+        android:id="@+id/iv_slot_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:src="@mipmap/q"
+        app:layout_constraintBottom_toTopOf="@+id/iv_slot_k"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_catch"
+        android:contentDescription="@string/slot"/>
+
+    <ImageView
+        android:id="@+id/iv_slot_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ten"
+        android:layout_marginBottom="@dimen/mini_margin"
+        app:layout_constraintBottom_toTopOf="@+id/btn_catch"
+        app:layout_constraintEnd_toStartOf="@+id/iv_slot_q"
+        app:layout_constraintStart_toEndOf="@+id/iv_slot_j"
+        android:contentDescription="@string/slot"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
